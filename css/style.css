@@ -1,0 +1,108 @@
+*{
+	font-family: 'Catamaran';
+}
+body{
+	color: #fff;
+	background-color: #252525;
+	font-size: 14px;
+}
+:root{
+	--color-negro:#282d33;
+	--menu-hover:#ec3642;
+	--color-rojo:#ec3642;
+	--fondo-header:#212121;
+	--fondo-footer:#212121;
+	--color-footer:#ccc;
+}
+/* Header */
+header{
+	background-color: var(--fondo-header);
+}
+/* Carousel */
+.carousel-item-active img{
+	filter: var(--color-negro);
+}
+.carousel-caption{
+	text-align: left;
+}
+.carousel-caption h1{
+	display: inline-block;
+	padding: 1;
+	font-size: 20px;
+	border: 2.5px;
+    border-style: solid;
+	border-color: #fff;
+	text-align: center;
+}
+.carousel-caption h5{
+	font-size: 40px;
+	font-weight: 650;
+}
+.carousel-caption p{
+	font-size: 15px;
+	font-weight: 650;
+	display: table;
+    padding:5px;
+	font-size:20px;
+	background-color: #ec3642;
+}
+/* Product Recommendations */
+.product{
+	padding: 50px 0;
+}
+.product-recomendations-list{
+	padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+.product-recomendations-list div{
+    background: #161616;
+    font-weight: 300;
+}
+.product-recomendations-list span{
+	font-weight: 100;
+	display: table;
+    padding:10px;
+	font-size:20px;
+	background-color: #ec3642;
+}
+.product-recomendations-list img{
+    float: left;
+	filter: grayscale(100%);
+}
+.text-items{
+	padding: 20px;
+}
+/* Product List */
+.subtitle{
+	font-weight: 600;
+	margin-left: auto;
+    margin-right: auto;
+}
+.new-product{
+	padding: 50px 0;
+}
+.product-list{
+	padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+/* Disscount */
+.banner{
+ filter: var(--color-rojo);
+ background-image: url(images/bg-parallax.png);
+}
+/* Footer */
+footer{
+	background-color: var(--fondo-footer);
+	color: var(--color-footer);
+	padding: 20px 0;
+}
+footer p{
+	margin-bottom: 5px;
+}
+footer span{
+	color: var(--color-rojo);
+}
